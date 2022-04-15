@@ -22,6 +22,7 @@ export const Row = styled.div``
 
 export const Link = styled.a`
 cursor: pointer;
+text-decoration: none ;
 font-size: 16px;
 color: white;
 padding-right: 18px;
@@ -49,7 +50,7 @@ justify-content: space-between;
 height: 52.82px;
 align-items: center;
 justify-self: flex-end ;
-padding-top: 20px ;
+/* padding-top: 20px ; */
 `
 
 export const OpopGroup = styled.div`
@@ -58,7 +59,7 @@ line-height: 28px;
 display: flex;
 align-items: end ;
 color: white;
-line-height: 28px;`
+`
 
 export const DevelopedBy = styled.div``
 
@@ -111,12 +112,13 @@ export const OpopLogoSmall = styled.img`
 width: 32px;
 height: 29px;
 padding-left: 5px;
-padding-right: 5px;`
+padding-right: 5px;
+`
 
 export const Copyright = styled.div`
 color: white;
 line-height: 124.1%;
-    padding-top: 33px;
+padding-top: 33px;
 `
 
 export const TermsAndConditions = styled.div``
@@ -126,8 +128,8 @@ display: flex;`
 
 export const FooterLogo = styled.img`
 width: 117.74px;
-    height: 117.74px;
-    position: absolute;
-    right: 0px;
-    top: 20px;
-    display: block;`
+height: 117.74px;
+position: absolute;
+right: 0px;
+top: 20px;
+display: block;`

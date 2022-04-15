@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Logo from "./logo"
 import {
   OpeningBackground,
@@ -6,10 +6,14 @@ import {
 } from "./styles"
 
 const Animation = () => {
+  const [visible, setVisible] = useState<boolean>(true);
+  setTimeout(() => {
+    setVisible(false)
+  }, 10000);
   return (
     <>
       <Logo />
-      <OpeningBackground></OpeningBackground>
+     {visible && <OpeningBackground></OpeningBackground>}
     </>
   )
 }

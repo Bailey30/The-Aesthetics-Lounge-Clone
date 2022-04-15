@@ -71,9 +71,6 @@ const Services = () => {
                                         type="text"
                                         name="contactNumber"
                                         placeholder='Contact number'
-                                        validation={
-                                            errors.contactNumber && touched.contactNumber && errors.contactNumber
-                                        }
                                     />
                                     <PlaceHolder $active={values.contactNumber}>Contact number</PlaceHolder>
                                 </InputContainer>
@@ -82,9 +79,6 @@ const Services = () => {
                                         type="email"
                                         name="emailAddress"
                                         placeholder='Email address'
-                                        validation={
-                                            touched.emailAddress
-                                        }
                                     />
                                     <PlaceHolder $active={values.emailAddress}>Email address</PlaceHolder>
                                 </InputContainer>

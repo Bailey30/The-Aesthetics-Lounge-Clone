@@ -62,7 +62,11 @@ width: 200.86px;
     text-align: center;
     color: ${props => props.filled ? "rgb(255, 255, 255)" : `${colors.green1}`};
     cursor: pointer;
-    transition: all 0.5s ease 0s;`
+    transition: all 0.5s;
+    &:hover{
+        background: ${props => !props.filled && "rgba(135, 209, 214, 0.3)"};
+        box-shadow: ${props => props.filled && `0px 7px 18px ${colors.green3}`};}
+        `
 
 export const RightContainer = styled.div`
 box-sizing: border-box ;
