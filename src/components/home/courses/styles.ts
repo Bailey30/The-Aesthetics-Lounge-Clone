@@ -145,10 +145,10 @@ box-sizing: border-box;
 margin-top: 20px;
 text-align: center;
 position: absolute;
-width: ${props=> props.i === props.active ? "295px" : "292.73px"};
+width: 292.73px;
 height: 405px;
 color: ${props=> props.i === props.active ? "white" : ` ${colors.green1}`} ;
-transform: ${props=> props.i !== props.active ? "translateY(300px)" : "translateY(0)"};
+transform: ${props=> props.i !== props.active ? "translateY(300px) scale(1.01)"  : "translateY(0) scale(1)"};
 transition: all 0.5s ease 0s;
 `
 
