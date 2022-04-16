@@ -33,7 +33,9 @@ transition: 0.2s all;
 
 export const IconRow = styled.div`
 display: flex;
-height: 24px;`
+height: 24px;
+margin-bottom: 1px;
+`
 
 export const Icon = styled.img`
 cursor: pointer;
@@ -58,6 +60,7 @@ line-height: 28px;
 display: flex;
 align-items: end ;
 color: white;
+margin-bottom: 1px;
 `
 
 export const DevelopedBy = styled.div``
@@ -70,6 +73,7 @@ text-decoration: none;
 color: white;
 position: relative;
 display: flex;
+align-items: flex-end;
 &:before,
 &:after {
     content: "";
@@ -112,6 +116,7 @@ width: 32px;
 height: 29px;
 padding-left: 5px;
 padding-right: 5px;
+margin-bottom: 2px; ;
 `
 
 export const Copyright = styled.div`
