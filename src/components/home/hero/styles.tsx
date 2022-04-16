@@ -9,15 +9,6 @@ padding-top: 145px;
 background-repeat: no-repeat;
 background-position: center ;
 background-size: cover ;
-&:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0px;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(250, 250, 250, 0) 75%, rgb(255, 255, 255) 100%);
-}
 `
 
 export const Wrapper = styled.div`
@@ -27,6 +18,8 @@ margin: 0 auto;
 `
 
 export const Gradient = styled.div`
+height: 100%;
+background: linear-gradient(rgba(250, 250, 250, 0) 85%, rgb(255, 255, 255) 100%);
 `
 
 export const TextContainer = styled.div`
