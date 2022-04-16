@@ -145,4 +145,8 @@ text-align: center;
 color: white;
 border: none;
 cursor: pointer;
+transition: all 0.5s;
+    &:hover{
+        box-shadow: 0px 7px 18px ${colors.green3};
+}
 `
