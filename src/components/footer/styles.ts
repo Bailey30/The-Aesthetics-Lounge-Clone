@@ -50,7 +50,6 @@ justify-content: space-between;
 height: 52.82px;
 align-items: center;
 justify-self: flex-end ;
-/* padding-top: 20px ; */
 `
 
 export const OpopGroup = styled.div`

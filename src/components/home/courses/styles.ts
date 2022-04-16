@@ -14,7 +14,6 @@ padding-bottom: 60px;
 
 & .swiper {
     width: 100%;
-    /* height: 545px; */
     padding-bottom: 55px;
 }
 & .swiper-container {

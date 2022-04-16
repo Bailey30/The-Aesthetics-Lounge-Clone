@@ -20,7 +20,6 @@ const Services = () => {
             <Wrapper>
                 <Heading><Bold>enquire </Bold>about our services</Heading>
                 <Formik
-                
                     initialValues={{
                         firstName: "",
                         lastName: "",

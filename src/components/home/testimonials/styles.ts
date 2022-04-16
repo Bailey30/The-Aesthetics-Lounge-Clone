@@ -71,12 +71,10 @@ width: 200.86px;
 export const RightContainer = styled.div`
 box-sizing: border-box ;
 width: calc(100% - 486.36px);
-/* width: 714px; */
+
 & .swiper {
-    /* height: 100%; */
     width: 100%;
 }
-
 
 & .swiper-slide {
     box-sizing: border-box ;

@@ -115,7 +115,6 @@ height:100%;
 top:0px;
 left:0px;
 z-index:1000;
-/* background-color: ${colors.greyGreen1}; */
 -webkit-animation: ${bg} 10s;`
 
 export const Svg = styled.svg`

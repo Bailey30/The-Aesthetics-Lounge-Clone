@@ -12,8 +12,6 @@ import {
 } from "./styles"
 
 
-
-
 const DontTake = ()=> {
     return (
         <Section>

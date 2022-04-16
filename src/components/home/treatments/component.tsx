@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import data, { TreatmentData } from "./data"
 import {
     Section,
@@ -39,14 +39,11 @@ const Treatments = () => {
                     {data.map((data, i) => {
                         return <NavSquare onClick={() => handleActiveData(i)} i={i} selected={selected}>
                             <NavImage src={data.imgSmall} alt="treatment preview image" />
-
                             {i !== selected &&
                                 <NavText>{data.navText.map((text, i) => {
                                     return <TextSpan key={text}>{text}</TextSpan>
-
                                 })}</NavText>
                             }
-
                         </NavSquare>
                     })}
                 </NavImagesContainer>
@@ -66,7 +63,6 @@ const Treatments = () => {
                         </ButtonContainer>
                     </TextContainer>
                 </TreatmentInfoContainer>
-
                 <TrainingNotice>We provide training for<Bold>everyone</Bold></TrainingNotice>
             </Wrapper>
         </Section>

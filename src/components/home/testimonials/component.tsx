@@ -65,7 +65,6 @@ const Testimonials
                                     </Card>
                                 </SwiperSlide>
                             })}
-
                         </Swiper>
                     </RightContainer>
                 </Wrapper>

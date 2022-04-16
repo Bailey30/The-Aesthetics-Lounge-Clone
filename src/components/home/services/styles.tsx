@@ -7,7 +7,6 @@ interface FormProps {
     message?: boolean
     validation?: any
     $active?: any
-    
 }
 
 export const Section = styled.div`
@@ -81,7 +80,7 @@ ${(props: any) =>
         css`
             transform: translateY(-70%) translateX(-20px);
             font-size: 14px;
-    `}
+          `}
 `
 
 export const Input = styled(Field)<FormProps>`
@@ -96,7 +95,6 @@ line-height: 84%;
 color: rgb(42, 92, 107);
 outline: none;
 resize: none;
-/* background: rgb(255, 229, 239); */
 border: 2px solid ${colors.green1};
 box-shadow: rgb(255 0 101 / 15%) 0px 2px 10px 0px;
 
@@ -107,7 +105,6 @@ box-shadow: rgb(255 0 101 / 15%) 0px 2px 10px 0px;
     ${(props: any) =>
         props.message &&
         css`
-        /* box-sizing: border-box ; */
       height: 109.34px;
       padding-top: 19.26px;
       width: 100%;

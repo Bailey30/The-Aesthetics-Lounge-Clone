@@ -49,6 +49,9 @@ import socialsTwitter from "../media/twitter.2ffc8da7.svg"
 import rating from "../media/rating.9f06273a.svg"
 import arrow from "../media/arrow.5fceb86c.svg"
 
+// Index Signatures
+// Sometimes you don’t know all the names of a type’s properties ahead of time, but you do know the shape of the values.
+// In those cases you can use an index signature to describe the types of possible values
 
 export interface Types {
     [key: string]: string;
