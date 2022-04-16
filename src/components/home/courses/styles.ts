@@ -46,28 +46,28 @@ padding-bottom: 60px;
   }
 
   & .swiper-button-prev {
-    height: 40px;
+    height: 44px;
     width: 27px;
     position:absolute ;
     background-image: url(${img.arrow});
     background-repeat: no-repeat;
     background-position: center;
     left: -50px;
-    top: 55%;
+    top: 51.5%;
     transform: scaleX(-1);
     z-index: 10;
     cursor: pointer;
   }
 
   & .swiper-button-next {
-    height: 40px;
+    height: 44px;
     width: 27px;
     position:absolute ;
     background-image: url(${img.arrow});
     background-repeat: no-repeat;
     background-position: center;
     right: -50px;
-    top: 55%;
+    top: 51.5%;
     cursor: pointer;
   }
 `
@@ -79,7 +79,8 @@ position: relative ;
 `
 
 export const Bold = styled.span`
-font-weight: bold;`
+font-weight: bold;
+padding-right: 7px;`
 
 export const SectionTitle = styled.h1`
 padding-bottom: 30px;
@@ -141,7 +142,7 @@ width:${props=> props.i === props.active ? "345.03px" : "337.17px"};
 `
 export const InnerCard = styled.div<ActiveCardProps>`
 box-sizing: border-box;
-margin-top: 20px;
+margin-top: 24px;
 text-align: center;
 position: absolute;
 width: 292.73px;
@@ -180,7 +181,7 @@ export const Button = styled.button`
 border-radius: 22px;
 width: 181.07px;
 height: 44.38px;
-font-weight: 500;
+font-weight: 600;
 font-size: 18px;
 line-height: 131%;
 text-align: center;
@@ -189,7 +190,7 @@ cursor: pointer;
 color: ${colors.green1};
 position: absolute;
 left: 50%;
-bottom: 45px;
+bottom: 49px;
 transform: translateX(-50%);
 background: rgb(255, 255, 255);
 `

@@ -42,7 +42,7 @@ const Courses: React.FC<{}> = () => {
   return (
     <Section>
       <Wrapper>
-        <SectionTitle><Bold>courses&nbsp;</Bold>we offer</SectionTitle>
+        <SectionTitle><Bold>courses</Bold>we offer</SectionTitle>
         <Swiper
           slidesPerGroup={1}
           slidesPerView={3}
