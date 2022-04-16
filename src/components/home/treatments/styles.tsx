@@ -21,7 +21,7 @@ color: ${colors.greyGreen3};
 
 export const Bold = styled.span`
 font-weight: bold;
-padding-left: 7px;`
+padding-left: 6px;`
 
 export const NavImagesContainer = styled.div`
 display: flex;
