@@ -12,6 +12,12 @@ const Animation = () => {
     setVisible(false)
   }, 10000);
 
+  setTimeout(() => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+  }, 10);
+
   return (
     <>
       <Logo />

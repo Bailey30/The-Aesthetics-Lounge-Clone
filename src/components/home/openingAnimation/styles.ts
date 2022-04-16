@@ -109,7 +109,7 @@ export const circle = keyframes`
 `;
 
 export const OpeningBackground = styled.div`
-position:fixed;
+position:absolute;
 width:100%;
 height:100%;
 top:0px;
