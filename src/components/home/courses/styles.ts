@@ -1,11 +1,11 @@
-import styled, {css} from "styled-components"
+import styled, { css } from "styled-components"
 import colors from "../../../theme/colors"
 import img from "../../../img"
 
 interface ActiveCardProps {
-    active?: number | null
-    i?: number
-    img?: string
+  active?: number | null
+  i?: number
+  img?: string
 }
 
 export const Section = styled.div`
@@ -110,8 +110,8 @@ border-radius: 10px;
 overflow: hidden;
 position: relative;
 transition: all 0.5s;
-transform: ${props=> props.i === props.active && "scale(1.05)"};
-box-shadow: ${props=> props.i===props.active && "rgb(123 168 182 / 40%) 0px 31px 35px"};
+transform: ${props => props.i === props.active && "scale(1.05)"};
+box-shadow: ${props => props.i === props.active && "rgb(123 168 182 / 40%) 0px 31px 35px"};
 `
 
 export const ContainerForRevealButton = styled.div<ActiveCardProps>`
@@ -131,24 +131,25 @@ overflow: hidden;
     position: absolute;
     top: 0px;
     left: 0px;
-    background: ${props=> props.i === props.active && "rgba(42, 92, 107, 0.8)"};
+    background: ${props => props.i === props.active && "rgba(42, 92, 107, 0.8)"};
 }
+
 `
 
 export const BackgroundImage = styled.img<ActiveCardProps>`
 border-radius: 10px;
 margin: 0 auto;
-width:${props=> props.i === props.active ? "345.03px" : "337.17px"};
+width: 100%;
 `
 export const InnerCard = styled.div<ActiveCardProps>`
 box-sizing: border-box;
-margin-top: 24px;
+margin-top: 22px;
 text-align: center;
 position: absolute;
 width: 292.73px;
 height: 405px;
-color: ${props=> props.i === props.active ? "white" : ` ${colors.green1}`} ;
-transform: ${props=> props.i !== props.active ? "translateY(300px) scale(1.01)"  : "translateY(0) scale(1)"};
+color: ${props => props.i === props.active ? "white" : ` ${colors.green1}`} ;
+transform: ${props => props.i !== props.active ? " translateY(300px) " : "translateY(0) "};
 transition: all 0.5s ease 0s;
 `
 
@@ -157,16 +158,16 @@ font-size: 22px;
 padding: 0 0 15px;
 margin: 0 0 15px;
 line-height: 122.5%;
-border-bottom: ${props=> props.i === props.active ? "1px solid white" : "none"}
+box-sizing: border-box;
+
 `
 export const Line = styled.span<ActiveCardProps>`
 width: 100%;
 height: 1px;
-background: rgb(42, 92, 107);
+background:${props => props.i !== props.active ? "rgb(42, 92, 107);" : "white"}; 
 position: absolute;
-bottom: 337px;
+bottom:${props => props.i !== props.active ? "337px" : "362px"};
 left: 0px;
-opacity: ${props=> props.i !== props.active ? "1" : "0"};
 `
 
 export const DescParagraph = styled.div<ActiveCardProps>`
@@ -174,10 +175,11 @@ font-weight: normal;
 font-size: 16px;
 line-height: 122.5%;
 padding-top: 10px;
-opacity: ${props=> props.i === props.active ? "1" : "0"};
+opacity: ${props => props.i === props.active ? "1" : "0"};
 `
 
 export const Button = styled.button`
+font-family: proxima-nova;
 border-radius: 22px;
 width: 181.07px;
 height: 44.38px;
@@ -215,8 +217,8 @@ background: ${props => props.i === props.active ? "rgb(255, 255, 255)" : `${colo
 color: ${props => props.i !== props.active ? "white" : `${colors.green1}`} ;`
 
 interface ArrowProps {
-    next?: boolean
-    prev?: boolean
+  next?: boolean
+  prev?: boolean
 }
 
 export const Arrow = styled.div<ArrowProps>`
