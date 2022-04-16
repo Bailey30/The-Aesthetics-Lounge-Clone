@@ -1,7 +1,7 @@
 import React from 'react';
 import img from "../../../img"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Thumbs, Pagination } from "swiper"
+import { Swiper, SwiperSlide} from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Autoplay  } from "swiper"
 import 'swiper/css';
 import "swiper/css/pagination";
 import {
@@ -25,6 +25,7 @@ import {
 } from "./styles"
 import data from './data';
 
+SwiperCore.use([Autoplay])
 
 const Testimonials
     = () => {
@@ -46,24 +47,25 @@ const Testimonials
                             slidesPerView={1}
                             modules={[Pagination, Navigation]}
                             pagination={true}
-                            loop autoplay={{ delay: 10000 }}
+                            loop
+                            autoplay={{ delay: 10000 }}
                         >
-                            {data.map((item, i)=> {
-                                return  <SwiperSlide>
-                                <Card>
-                                    <Heading>{item.heading}</Heading>
-                                    <Comment>{item.comment}</Comment>
-                                    <BottomRow>
-                                        <NameAndImage>
-                                        <Image src={item.img}/>
-                                        <Name>{item.name}</Name>
-                                        </NameAndImage>
-                                        <RatingImage src={img.rating}/>
-                                    </BottomRow>
-                                </Card>
-                            </SwiperSlide>
+                            {data.map((item, i) => {
+                                return <SwiperSlide>
+                                    <Card>
+                                        <Heading>{item.heading}</Heading>
+                                        <Comment>{item.comment}</Comment>
+                                        <BottomRow>
+                                            <NameAndImage>
+                                                <Image src={item.img} />
+                                                <Name>{item.name}</Name>
+                                            </NameAndImage>
+                                            <RatingImage src={img.rating} />
+                                        </BottomRow>
+                                    </Card>
+                                </SwiperSlide>
                             })}
-                           
+
                         </Swiper>
                     </RightContainer>
                 </Wrapper>

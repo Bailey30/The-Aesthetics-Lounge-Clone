@@ -29,7 +29,8 @@ margin: 0;
 line-height: 84%;`
 
 export const Bold = styled.span`
-font-weight: bold;`
+font-weight: bold;
+padding-left: 7px;`
 
 export const Subtext = styled.div`
 font-weight: normal;

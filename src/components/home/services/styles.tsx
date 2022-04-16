@@ -11,9 +11,15 @@ interface FormProps {
 }
 
 export const Section = styled.div`
-padding-bottom: 94px;`
+box-sizing: border-box;
+padding-top: 75px;
+padding-bottom: 94px;
+border-radius: 0 345.231px 0 0;
+background:#F4F7F7;
+`
 
 export const Wrapper = styled.div`
+box-sizing: border-box ;
 width: 692.36px;
 margin: 0 auto;`
 
@@ -28,12 +34,15 @@ color: ${colors.green1};
 padding-bottom: 55px;`
 
 export const Bold = styled.span`
-font-weight: bold;`
+font-weight: bold;
+padding-left: 7px;
+`
 
 export const Row = styled.div`
 display: flex;
 justify-content: space-between;
-padding-bottom: 35px;`
+padding-bottom: 35px;
+`
 
 export const InputContainer = styled.div<FormProps>`
 position: relative;

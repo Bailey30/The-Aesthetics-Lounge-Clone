@@ -44,13 +44,13 @@ const Services = () => {
                                     <Input
                                         type="text"
                                         name="firstName"
-                                        placeholder='First name'
+                                        placeholder='First Name'
                                         $active={values.firstName} 
                                         validation={
                                             touched.firstName 
                                         }
                                     />
-                                    <PlaceHolder  $active={values.firstName} >First name</PlaceHolder>
+                                    <PlaceHolder  $active={values.firstName} >First Name</PlaceHolder>
                                 </InputContainer>
                                 <InputContainer>
                                     <Input

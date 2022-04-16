@@ -19,7 +19,7 @@ const DontTake = ()=> {
         <Section>
         <Wrapper> 
              <TextContainer> 
-                 <Title>don't just take <Bold>our word for it</Bold></Title> 
+                 <Title>don't just take<Bold>our word for it</Bold></Title> 
                 <Subtext>Here's just a few of the people who have been given the complete, perfect look thanks to the Aesthetic Lounge.</Subtext>
             </TextContainer>
             <ImageRow>

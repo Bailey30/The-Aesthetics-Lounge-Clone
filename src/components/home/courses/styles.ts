@@ -99,7 +99,6 @@ export const SliderContainer = styled.div``
 
 
 export const Card = styled.div<ActiveCardProps>`
-
 display: flex;
 align-items: center ;
 justify-content: center;
@@ -142,10 +141,11 @@ margin: 0 auto;
 width:${props=> props.i === props.active ? "345.03px" : "337.17px"};
 `
 export const InnerCard = styled.div<ActiveCardProps>`
+box-sizing: border-box;
 margin-top: 20px;
 text-align: center;
 position: absolute;
-width: ${props=> props.i === props.active ? "307px" : "292.73px"};
+width: ${props=> props.i === props.active ? "295px" : "292.73px"};
 height: 405px;
 color: ${props=> props.i === props.active ? "white" : ` ${colors.green1}`} ;
 transform: ${props=> props.i !== props.active ? "translateY(300px)" : "translateY(0)"};

@@ -16,11 +16,12 @@ padding-bottom: 46px;
 font-size: 50px;
 font-family: "forma-djr-banner";
 font-weight: 400;
-color: ${colors.green1};
+color: ${colors.greyGreen3};
 `
 
 export const Bold = styled.span`
-font-weight: bold;`
+font-weight: bold;
+padding-left: 7px;`
 
 export const NavImagesContainer = styled.div`
 display: flex;
@@ -33,6 +34,7 @@ interface NavSquareProps {
 }
 
 export const NavSquare = styled.div<NavSquareProps>`
+cursor: pointer;
 width: 100px;
 height: 100px;
 overflow: hidden;

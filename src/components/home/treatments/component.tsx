@@ -34,7 +34,7 @@ const Treatments = () => {
     return (
         <Section>
             <Wrapper>
-                <Title>our <Bold>treatments</Bold></Title>
+                <Title>our<Bold>treatments</Bold></Title>
                 <NavImagesContainer>
                     {data.map((data, i) => {
                         return <NavSquare onClick={() => handleActiveData(i)} i={i} selected={selected}>
@@ -67,7 +67,7 @@ const Treatments = () => {
                     </TextContainer>
                 </TreatmentInfoContainer>
 
-                <TrainingNotice>We provide training for&nbsp; <Bold>everyone</Bold></TrainingNotice>
+                <TrainingNotice>We provide training for<Bold>everyone</Bold></TrainingNotice>
             </Wrapper>
         </Section>
     );
