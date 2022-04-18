@@ -51,7 +51,7 @@ const Testimonials
                             autoplay={{ delay: 10000 }}
                         >
                             {data.map((item, i) => {
-                                return <SwiperSlide>
+                                return <SwiperSlide key={i}>
                                     <Card>
                                         <Heading>{item.heading}</Heading>
                                         <Comment>{item.comment}</Comment>

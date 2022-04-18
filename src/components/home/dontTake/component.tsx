@@ -22,7 +22,7 @@ const DontTake = ()=> {
             </TextContainer>
             <ImageRow>
                 {data.map((item, i)=> {
-                    return <ImageContainer img={item.img} href={item.link}></ImageContainer>
+                    return <ImageContainer img={item.img} href={item.link} key={i}></ImageContainer>
                 })}
             </ImageRow>
         </Wrapper>

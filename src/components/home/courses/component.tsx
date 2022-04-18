@@ -36,7 +36,7 @@ const Courses: React.FC<{}> = () => {
   }
 
   useEffect(() => {
-    console.log(active);
+    // console.log(active);
   }, [active])
 
   return (
@@ -53,15 +53,15 @@ const Courses: React.FC<{}> = () => {
             prevEl: ".swiper-button-prev",
           }}>
           {data.map((course, i) => {
-            return <SwiperSlide>
-              <Card active={active} i={i} img={course.img}>
+            return <SwiperSlide key={course.tag}>
+              <Card active={active} i={i} img={course.img} >
                 <ContainerForRevealButton active={active} i={i}>
                   <BackgroundImage src={course.img} active={active} i={i} />
                   <InnerCard active={active} i={i}>
                     <Title active={active} i={i}>{course.title}</Title>
                     <Line active={active} i={i}></Line>
                     {course.description.map((desc, index) => {
-                      return <DescParagraph active={active} i={i}>{desc}</DescParagraph>
+                      return <DescParagraph active={active} i={i} key={desc}>{desc}</DescParagraph>
                     })}
                     <Button>View Course</Button>
                   </InnerCard>

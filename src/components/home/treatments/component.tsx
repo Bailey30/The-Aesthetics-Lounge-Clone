@@ -37,7 +37,7 @@ const Treatments = () => {
                 <Title>our<Bold>treatments</Bold></Title>
                 <NavImagesContainer>
                     {data.map((data, i) => {
-                        return <NavSquare onClick={() => handleActiveData(i)} i={i} selected={selected}>
+                        return <NavSquare onClick={() => handleActiveData(i)} i={i} selected={selected} key={data.title}>
                             <NavImage src={data.imgSmall} alt="treatment preview image" />
                             {i !== selected &&
                                 <NavText>{data.navText.map((text, i) => {
@@ -55,7 +55,7 @@ const Treatments = () => {
                     <TextContainer>
                         <InfoTitle>{activeData?.title}</InfoTitle>
                         {activeData.description.map((desc, i) => {
-                            return <Description>{desc}</Description>
+                            return <Description key={i}>{desc}</Description>
                         })}
                         <ButtonContainer>
                             <Button filled>Book Me In</Button>
