@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/The-Aesthetics-Lounge-Clone/static/css/main.9262c5c8.css",
-    "main.js": "/The-Aesthetics-Lounge-Clone/static/js/main.02ff4182.js",
+    "main.js": "/The-Aesthetics-Lounge-Clone/static/js/main.1f74b254.js",
     "static/media/home-hero.228bbd5e.png": "/The-Aesthetics-Lounge-Clone/static/media/home-hero.228bbd5e.228bbd5e8f9daadcdbc8.png",
     "static/media/06.9c351d8d.png": "/The-Aesthetics-Lounge-Clone/static/media/06.9c351d8d.9c351d8d5fb6c3c1b530.png",
     "static/media/05.0202564e.png": "/The-Aesthetics-Lounge-Clone/static/media/05.0202564e.0202564ee599ef0246ab.png",
@@ -45,10 +45,10 @@
     "index.html": "/The-Aesthetics-Lounge-Clone/index.html",
     "static/media/arrow.5fceb86c.svg": "/The-Aesthetics-Lounge-Clone/static/media/arrow.5fceb86c.5fceb86cbf1e1968c37c6c9fe9d07fdb.svg",
     "main.9262c5c8.css.map": "/The-Aesthetics-Lounge-Clone/static/css/main.9262c5c8.css.map",
-    "main.02ff4182.js.map": "/The-Aesthetics-Lounge-Clone/static/js/main.02ff4182.js.map"
+    "main.1f74b254.js.map": "/The-Aesthetics-Lounge-Clone/static/js/main.1f74b254.js.map"
   },
   "entrypoints": [
     "static/css/main.9262c5c8.css",
-    "static/js/main.02ff4182.js"
+    "static/js/main.1f74b254.js"
   ]
 }
